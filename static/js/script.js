@@ -27,12 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let isUserLoggedIn = true; // User Logging (Without logging = true )
     let checkDrowsinessInterval = null;
 
-    navigator.mediaDevices.getUserMedia({ video: true })
-      .then((stream) => {
-        document.querySelector("video").srcObject = stream;
-      })
-      .catch((error) => console.error("Camera access denied:", error));
-
+   
     // Settings
     let settings = {
         sensitivity: 5,
